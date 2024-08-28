@@ -22,4 +22,6 @@ Sklearn for model building
 Google Colaboratory Notebook
 
 
- 
+ Data set:
+ https://www.kaggle.com/datasets/harlfoxem/housesalesprediction
+ csv file:"C:\Users\sp22adn\Downloads\kc_house_data.csv"
