@@ -39,3 +39,41 @@ To run this project locally, follow the instructions below:
    ```bash
    git clone https://github.com/username/house-price-prediction.git
    cd house-price-prediction
+
+2. Install the required dependencies:
+   
+   ```bash
+   pip install -r requirements.txt
+   
+3. Run the Jupyter Notebooks in the `notebooks/` directory to train the models and evaluate their performance:
+
+   ```bash
+   jupyter notebook
+
+
+4. To run the Streamlit web application, navigate to the `streamlit_app/` folder and run:
+
+   ```bash
+   streamlit run app.py
+
+
+## Features
+- **Exploratory Data Analysis (EDA):** A thorough analysis of the dataset, including distribution plots, correlation heatmaps, and feature engineering.
+
+- **Model Training and Evaluation:** Various machine learning models (individual and ensemble) are trained on different data splits (80:20, 70:30, 60:40) and evaluated using the RMSE, MAE, and R-squared metrics.
+
+- **Feature Engineering:** The dataset is enhanced by adding new features like house age and renovation status to improve model accuracy.
+
+- **Streamlit Application:** A user-friendly web application where users can input the features of a house and predict its price using the best-performing machine learning model.
+
+## Usage
+- **Model Comparison:** Evaluate the performance of different machine learning models on predicting house prices.
+- **Price Prediction Web App:** The Streamlit app allows users to input house features and get a price estimate using the trained model.
+
+## Results
+The analysis shows that **Linear Regression** and **XGBoost** models yielded the best results across various splits and metrics. The RMSE and MAE were lowest for these models, while the R-squared values were the highest, making them the most reliable for predicting house prices in King County, USA.
+
+## Future Work
+- **Expansion of feature sets** to include more detailed neighborhood and economic factors.
+- **Use of advanced deep learning models** such as CNNs or RNNs for improved predictions.
+- **Exploration of interpretability techniques** to better understand the importance of features influencing house prices.
