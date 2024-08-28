@@ -1,27 +1,41 @@
-Data Science FINAL PROJECT REPORT 
+# House Price Prediction Using Machine Learning Models
 
-Project Title:  
-Comparison of Ensemble Machine Learning Algorithms vs Individual Machine learning Algorithms for House price prediction     
+## Overview
+This project focuses on **Comparing Ensemble Machine Learning Algorithms vs. Individual Machine Learning Algorithms for House Price Prediction** using the King County, USA housing dataset. The primary goal of the research is to evaluate how ensemble learning methods compare to individual machine learning models in predicting house prices and to assess the effective performance benefits through ensemble algorithms.
 
-my project is mailnly based on the comparision of predictive performances of the single and collective models of the machine learning frame work on the record from king county, USA. Several models such as linear Regression, support vector Machine (SVM), Decision Tree, Random forest, Gradient Boosting, AdaBoost, and XGBoost are used and their performances are compared on three different splits of data (80:20, 70:30, and 60:40), to predict the house prices based on the data.
-Here the data is splitted into training and testing, then the results are assessed with essential measures such as Root Mean  Squared Error (RMSE), Mean Absolute Error (MAE) and R-squared (R²), the accuracy and reliability of the models.
- Comparing the errors and the R-squared values of all models, we can note that Linear Regression and XGBoost models have, as a rule, the lowest errors and the highest R-squared values that proves their effectiveness in identifying patterns in the data on housing. AdaBoost also fared badly, specifically in RMSE and R-squared meaning that it is not suitable for this specific dataset.
-Creating a Machine Learning model to predict the house price based on the given data. We are going to use the dataset from Kaggle.com. We are also going to create a single page website which will provide the front end to access our model for predictions.
+Several algorithms are implemented, including:
+- **Linear Regression**
+- **Support Vector Machine (SVM)**
+- **Decision Tree Regressor**
+- **Random Forest Regressor**
+- **Gradient Boosting Regressor**
+- **AdaBoost Regressor**
+- **XGBoost Regressor**
 
-Below data science concepts are used in this project:
+The performance of these models is assessed using evaluation metrics such as:
+- **Root Mean Squared Error (RMSE)**
+- **Mean Absolute Error (MAE)**
+- **R-squared (R²)**
 
-Data loading and cleaning
-Outlier detection and removal
-Feature engineering
+## Project Structure
+This repository contains the following key components:
 
+- **data/**: Dataset files and any other relevant data used for analysis.
+- **notebooks/**: Jupyter Notebooks containing the data analysis, modeling, and evaluation.
+- **src/**: Python scripts for model building, training, and evaluation.
+- **streamlit_app/**: Files related to the deployment of the Streamlit web application.
+- **README.md**: Project description and instructions.
 
-Python:
-Numpy and Pandas for data cleaning
-Matplotlib for data visualization
-Sklearn for model building
-Google Colaboratory Notebook
+## Dataset
+The dataset used in this research is the **House Sales in King County, USA** dataset, which contains features such as the number of bedrooms, bathrooms, living area size, etc. These features are used to predict the house price.
 
+### Dataset Link
+You can access the dataset [here](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction).
 
- Data set:
- https://www.kaggle.com/datasets/harlfoxem/housesalesprediction
- csv file:"C:\Users\sp22adn\Downloads\kc_house_data.csv"
+## Installation
+To run this project locally, follow the instructions below:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/house-price-prediction.git
+   cd house-price-prediction
